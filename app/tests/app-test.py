@@ -1,9 +1,9 @@
-# import sys, os
+import sys, os
 
-# sys.path.append(os.path.abspath(os.path.dirname(__file__) + '/' + '../..'))
+sys.path.append(os.path.abspath(os.path.dirname(__file__) + '/' + '../..'))
 
 import unittest
-from src.app import my_function
+from app.src.app import my_function
 
 
 class MyTest(unittest.TestCase):

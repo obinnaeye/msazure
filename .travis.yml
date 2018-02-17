@@ -3,8 +3,8 @@ python:
   - "3.6"
 # command to install dependencies
 install:
-  - python setup.py install
+  - pip install -r requirements.txt
 # command to run tests
 script:
-  - echo PYTHONPATH
-  - python tests/app-test.py
+  - export PYTHONPATH=$PYTHONPATH:$(pwd)
+  - python app/tests/app-test.py
